@@ -3,12 +3,12 @@ body {
 	max-width: 860px;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: lightgrey;
 }
 
 header {
 	padding: 10px 0 10px 0;
 	text-align: center;
-	border: 10px double black;
 }
 
 h1 {
@@ -18,29 +18,23 @@ h1 {
 
 nav {
 	text-align: center;
-	border: 10px double black;
-	border-top: none;
-	border-bottom: none;
 	padding: 10px 0 10px 0;
 }
 
 nav a {
-	font-weight: 700;
+	font-weight: bold;
 	font-size: 20px;
 	border-radius: 0px;
-	border: none;
 	color: white;
-	background-color: green;
-	text-decoration: none;
+	background-color: grey;
 	padding: 10px;
 }
 
 nav a:hover {
-	background-color: darkgreen;
+	background-color: black;
 }
 
 main {
-	border: 10px double black;
 	padding: 10px;
 }
 
@@ -56,9 +50,8 @@ form {
 }
 
 .blog-entry {
-	padding: 20px;
+	padding: 5px;
 	border: inherit;
-	margin-bottom: 10px;
 }
 
 
@@ -68,12 +61,12 @@ form {
 	border-radius: 0px;
 	border: none;
 	color: white;
-	background-color: green;
+	background-color: grey;
     margin-top: 1rem;
 }
 
 #submit-button:hover {
-	background-color: darkgreen !important;
+	background-color: black !important;
 	cursor: pointer;
 }
 
@@ -98,7 +91,7 @@ input[type='radio']:checked:after {
     top: -2px;
     left: -1px;
     position: relative;
-    background-color: green;
+    background-color: black;
     content: '';
     display: inline-block;
     visibility: visible;
@@ -106,7 +99,7 @@ input[type='radio']:checked:after {
 }
 
 input[type='radio']:hover:after {
-    background-color: darkgreen;
+    background-color: grey;
 }
 
 input[type="radio"] {
@@ -122,56 +115,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-	background-color: green;
-}
-
-.blue-text {
-	color: blue;
-}
-
-.red-text {
-	color: red;
-}
-
-.negative-colors {
-	color: white;
-	background-color: black;
-}
-
-.negative-colors nav {
-	border-color: white;
-}
-
-.negative-colors header {
-	border-color: white;
-}
-
-.negative-colors main {
-	border-color: white;
-}
-
-.negative-colors #submit-button {
-	background-color: #ff7fff;
-	color: black;
-}
-
-.negative-colors #submit-button:hover {
-	background-color: #ff9bff;
-}
-
-.negative-colors nav a {
-	background-color: #ff7fff;
-	color: black;
-}
-
-.negative-colors nav a:hover {
-	background-color: #ff9bff;
-}
-
-#colors-selector {
-	position: absolute;
-	top: 10px;
-	left: 10px;
+	background-color: grey;
 }
 
 footer {

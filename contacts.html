@@ -1,66 +1,62 @@
 <!DOCTYPE html>
-<html lang="LT">
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-    <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    <title>Kernius Brazauskas page! | Contacts</title>
+    <title>Contact | Tesla</title>
     <link rel="stylesheet" href="mystyles.css">
-    <script src="script.js"></script>
 </head>
-
 <body>
-    <div id="colors-selector">
-        <span>Choose colors</span>
-        <select name="colors" id="color-picker">
-            <option value="">Default</option>
-            <option value="blue-text">Blue text colour</option>
-            <option value="red-text">Red text colour</option>
-            <option value="negative-colors">Negative</option>
-        </select>
-    </div>
     <header>
-        <h1>Kernius blog!</h1>
+        <h1>Contact us</h1>
     </header>
     <nav>
+        <a href="about.html">About</a>
         <a href="index.html">Main page</a>
-        <a href="about.html">About me</a>
         <a href="contacts.html">Contacts</a>
     </nav>
     <main>
-        <h1>My Contacts!</h1>
-        <ul>
+        <h1>Contacts</h1>
+        <!-- ol -->
+        <nl>
             <li>Telephone number: +37066666666</li>
-            <li>Email: kernius.brazauskas@mif.stud.vu.lt</li>
-            <li>Lietuva, Vilnius, Naugarduko g. 24</li>
-        </ul>
-        <h1>Write me!</h1>
+            <li>Email: career@tesla.com</li>
+            <li>Palo Alto, California, United States</li>
+        </nl>
+        <h1>Apply for job</h1>
         <form>
-            <label for="message">Message:</label>
-            <input id="message" name="message" type="text" required>
-            <label for="date">Date when you want me to get this message:</label>
-            <input type="date" id="date" name="date" required>
-            <label for="email">Your email:</label>
-            <input type="email" id="email" name="email">
+            <label for="fullName">Full name</label>
+            <input id="fullName" name="fullName" type="text" required>
+
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
             <div>
-                <label>Why do you want to message me?</label>
+                <label>Position you are applying for:</label>
                 <br>
-                <input type="radio" id="fun" name="messageType" value="FUN">
-                <label for="fun">For fun!</label><br>
-                <input type="radio" id="reccomendation" name="messageType" value="RECOMMEND">
-                <label for="reccomendation">For recomendation!</label><br>
-                <input type="radio" id="nothing" name="messageType" value="NOTHING">
-                <label for="nothing">I have nothing else to do.</label>
+                <input type="radio" id="developer" name="messageType">
+                <label for="developer">Software developer</label><br>
+                <input type="radio" id="electrician" name="messageType">
+                <label for="electrician">Electrician</label><br>
+                <input type="radio" id="manager" name="messageType">
+                <label for="manager">Manager</label>
             </div>
+
+            <label for="number">How would you rate your skill (from 1 to 10)?</label>
+            <input type="number" id="number" name="skill" min="0" max="10" required>
+
             <div>
                 <input type="checkbox" id="approve" name="approve" required>
-                <label for="approve">I understand that this will not send to anyone!</label>
+                <label for="approve">I agree to terms and conditions</label>
             </div>
-            <button id="submit-button" type="submit">Send</button>
+            
+            <button id="submit-button" type="submit">Apply</button>
         </form>
     </main>
     <footer>
-        <p>All rights belong to Kenrius Brazauskas 2021</p>
+        <p>Tesla 2021</p>
     </footer>
 </body>
 
