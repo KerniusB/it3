@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="LT">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Kernius Brazauskas page! | Contacts</title>
+    <link rel="stylesheet" href="mystyles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="colors-selector">
+        <span>Choose colors</span>
+        <select name="colors" id="color-picker">
+            <option value="">Default</option>
+            <option value="blue-text">Blue text colour</option>
+            <option value="red-text">Red text colour</option>
+            <option value="negative-colors">Negative</option>
+        </select>
+    </div>
+    <header>
+        <h1>Kernius blog!</h1>
+    </header>
+    <nav>
+        <a href="index.html">Main page</a>
+        <a href="about.html">About me</a>
+        <a href="contacts.html">Contacts</a>
+    </nav>
+    <main>
+        <h1>My Contacts!</h1>
+        <ul>
+            <li>Telephone number: +37066666666</li>
+            <li>Email: arijus.klisevicius@mif.stud.vu.lt</li>
+            <li>Lietuva, Vilnius, Naugarduko g. 24</li>
+        </ul>
+        <h1>Write me!</h1>
+        <form>
+            <label for="message">Message:</label>
+            <input id="message" name="message" type="text" required>
+            <label for="date">Date when you want me to get this message:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="email">Your email:</label>
+            <input type="email" id="email" name="email">
+            <div>
+                <label>Why do you want to message me?</label>
+                <br>
+                <input type="radio" id="fun" name="messageType" value="FUN">
+                <label for="fun">For fun!</label><br>
+                <input type="radio" id="reccomendation" name="messageType" value="RECOMMEND">
+                <label for="reccomendation">For recomendation!</label><br>
+                <input type="radio" id="nothing" name="messageType" value="NOTHING">
+                <label for="nothing">I have nothing else to do.</label>
+            </div>
+            <div>
+                <input type="checkbox" id="approve" name="approve" required>
+                <label for="approve">I understand that this will not send to anyone!</label>
+            </div>
+            <button id="submit-button" type="submit">Send</button>
+        </form>
+    </main>
+    <footer>
+        <p>All rights belong to Kenrius Brazauskas 2021</p>
+    </footer>
+</body>
+
+</html>

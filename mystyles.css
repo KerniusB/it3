@@ -1,0 +1,206 @@
+body {
+	margin: 0;
+	max-width: 860px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	padding: 10px 0 10px 0;
+	text-align: center;
+	border: 10px double black;
+}
+
+h1 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+nav {
+	text-align: center;
+	border: 10px double black;
+	border-top: none;
+	border-bottom: none;
+	padding: 10px 0 10px 0;
+}
+
+nav a {
+	font-weight: 700;
+	font-size: 20px;
+	border-radius: 0px;
+	border: none;
+	color: white;
+	background-color: green;
+	text-decoration: none;
+	padding: 10px;
+}
+
+nav a:hover {
+	background-color: darkgreen;
+}
+
+main {
+	border: 10px double black;
+	padding: 10px;
+}
+
+#blogs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+.blog-entry {
+	padding: 20px;
+	border: inherit;
+	margin-bottom: 10px;
+}
+
+
+#submit-button {
+	font-weight: 700;
+	font-size: 20px;
+	border-radius: 0px;
+	border: none;
+	color: white;
+	background-color: green;
+    margin-top: 1rem;
+}
+
+#submit-button:hover {
+	background-color: darkgreen !important;
+	cursor: pointer;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: green;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:hover:after {
+    background-color: darkgreen;
+}
+
+input[type="radio"] {
+    margin-left: 0;
+    width: 1rem;
+    height: 1rem;
+}
+
+input[type="checkbox"] {
+	width: 1rem;
+	height: 1rem;
+	margin-left: 0px;
+}
+
+input[type="checkbox"]:checked {
+	background-color: green;
+}
+
+.blue-text {
+	color: blue;
+}
+
+.red-text {
+	color: red;
+}
+
+.negative-colors {
+	color: white;
+	background-color: black;
+}
+
+.negative-colors nav {
+	border-color: white;
+}
+
+.negative-colors header {
+	border-color: white;
+}
+
+.negative-colors main {
+	border-color: white;
+}
+
+.negative-colors #submit-button {
+	background-color: #ff7fff;
+	color: black;
+}
+
+.negative-colors #submit-button:hover {
+	background-color: #ff9bff;
+}
+
+.negative-colors nav a {
+	background-color: #ff7fff;
+	color: black;
+}
+
+.negative-colors nav a:hover {
+	background-color: #ff9bff;
+}
+
+#colors-selector {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+footer {
+	margin-top: 2rem;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+table {
+	width: 100%;
+}
+
+.blog-entry > p {
+    color: purple;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 576px) { 
+    nav {
+        position: fixed;
+        bottom: 0;
+        border: none;
+        background-color: white;
+        width: 100%;
+    }
+
+    .negative-colors nav {
+        background-color: black;
+    }
+}
