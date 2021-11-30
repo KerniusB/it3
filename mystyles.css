@@ -37,7 +37,7 @@ main {
 	padding: 10px;
 }
 
-#cars {
+#shop {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -49,7 +49,7 @@ form {
 	flex-direction: column;
 }
 
-.car-entry {
+.shop-entry {
 	padding: 5px;
 	border: inherit;
 }
