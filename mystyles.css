@@ -1,5 +1,4 @@
 body {
-	margin: 0;
 	max-width: 860px;
 	margin-left: auto;
 	margin-right: auto;
@@ -38,10 +37,11 @@ main {
 	padding: 10px;
 }
 
-#blogs {
+#cars {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	border: solid;
 }
 
 form {
@@ -49,7 +49,7 @@ form {
 	flex-direction: column;
 }
 
-.blog-entry {
+.car-entry {
 	padding: 5px;
 	border: inherit;
 }
@@ -68,6 +68,10 @@ form {
 #submit-button:hover {
 	background-color: black !important;
 	cursor: pointer;
+}
+
+#submit-button:hover {
+	background-color: green;
 }
 
 input[type='radio']:after {
@@ -111,7 +115,7 @@ input[type="radio"] {
 input[type="checkbox"] {
 	width: 1rem;
 	height: 1rem;
-	margin-left: 0px;
+	margin-top: 5px;
 }
 
 input[type="checkbox"]:checked {
@@ -130,21 +134,13 @@ table {
 	width: 100%;
 }
 
-.blog-entry > p {
-    color: purple;
+.car-entry > p {
+    color: red;
     font-size: 2rem;
 }
 
 @media screen and (max-width: 576px) { 
     nav {
-        position: fixed;
-        bottom: 0;
-        border: none;
-        background-color: white;
-        width: 100%;
-    }
-
-    .negative-colors nav {
-        background-color: black;
+        text-align: left;
     }
 }
