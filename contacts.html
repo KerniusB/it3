@@ -26,13 +26,16 @@
         <h1>Apply for job</h1>
         <form>
             <label for="fullName">Full name</label>
-            <input id="fullName" name="fullName" type="text" required>
+            <input id="fullName" name="fullName" type="text">
 
             <label for="birthday">Birthday:</label>
             <input type="date" id="birthday" name="birthday">
 
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age">
+
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email">
 
             <div>
                 <label>Position you are applying for:</label>
@@ -46,10 +49,10 @@
             </div>
 
             <label for="number">How would you rate your skill (from 1 to 10)?</label>
-            <input type="number" id="number" name="skill" min="0" max="10" required>
+            <input type="number" id="number" name="skill" min="0" max="10">
 
             <div>
-                <input type="checkbox" id="approve" name="approve" required>
+                <input type="checkbox" id="approve" name="approve">
                 <label for="approve">I agree to terms and conditions</label>
             </div>
 
@@ -59,6 +62,8 @@
     <footer>
         <p>Tesla 2021</p>
     </footer>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
