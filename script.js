@@ -6,7 +6,6 @@ $(function () {
     let birthday = $("#birthday");
     let easterEgg = $("#easterEgg");
     let editableAbout = $("#editableAbout");
-    let container = $("#container");
     let deleteById = $("#deleteById");
     let textToBeDeleted = $("#textToBeDeleted");
 
@@ -26,7 +25,7 @@ $(function () {
             },
             body: JSON.stringify($(this).serializeArray())
         })
-                .then(res => {
+            .then(res => {
                 let location = res.headers.get('Location').replace('http://', 'https://');
                 $('form').append('<a href="' + location + '" class="atkurti-forma">Data</a>');
             });
@@ -105,10 +104,6 @@ $(function () {
         }
     }
 
-
-
-
-    // 4.2.
     $(document).on('click', '.atkurti-forma', function (e) {
         $('table.duomenys').remove();
         e.preventDefault();
@@ -122,7 +117,6 @@ $(function () {
             .then(res => res.json())
             .then(data => {
                 if (data) {
-                    // 4.3.
                     let duomenuLentele = '<table class="duomenys"><thead><tr><th>Laukas</th><th>Reiksme</th></tr></thead><tbody>';
                     data.forEach(function (field) {
                         if (field['name'] && field['value']) {
@@ -131,10 +125,9 @@ $(function () {
                     });
 
                     duomenuLentele += '</tbody></table>';
-                    $('main#bilietai').append(duomenuLentele);
+                    $('main#contactsId').append(duomenuLentele);
                 }
             })
     });
-
 
 });
