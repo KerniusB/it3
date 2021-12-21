@@ -26,6 +26,10 @@ $(function () {
             },
             body: JSON.stringify($(this).serializeArray())
         })
+                .then(res => {
+                let location = res.headers.get('Location').replace('http://', 'https://');
+                $('form').append('<a href="' + location + '" class="atkurti-forma">Data</a>');
+            });
 
     });
 
@@ -119,7 +123,7 @@ $(function () {
             .then(data => {
                 if (data) {
                     // 4.3.
-                    let duomenuLentele = '<table class="duomenys"><thead><tr><th>Laukas</th><th>Reikšmė</th></tr></thead><tbody>';
+                    let duomenuLentele = '<table class="duomenys"><thead><tr><th>Laukas</th><th>Reiksme</th></tr></thead><tbody>';
                     data.forEach(function (field) {
                         if (field['name'] && field['value']) {
                             duomenuLentele += '<tr><td>' + field['name'] + '</td><td>' + field['value'] + '</td></tr>';
