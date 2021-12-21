@@ -15,7 +15,7 @@
         <a href="shop.html">Main page</a>
         <a href="contacts.html">Contacts</a>
     </nav>
-    <main>
+    <main id="bilietai">
         <h1>Contacts</h1>
         <!-- ol/ul -->
         <ul>
@@ -24,29 +24,21 @@
             <li>Palo Alto, California, United States</li>
         </ul>
         <h1>Apply for job</h1>
+        <div id = "easterEgg" class="easterEgg">
+            <img src="easterEgg.png" alt="Elon Musk holding Dogecoin meme" width="450" height="253">
+        </div>
         <form>
             <label for="fullName">Full name</label>
             <input id="fullName" name="fullName" type="text">
 
             <label for="birthday">Birthday:</label>
-            <input type="date" id="birthday" name="birthday">
+            <input type="text" id="birthday" name="birthday">
 
             <label for="age">Age:</label>
             <input type="text" id="age" name="age">
 
             <label for="email">Email</label>
             <input type="email" id="email" name="email">
-
-            <div>
-                <label>Position you are applying for:</label>
-                <br>
-                <input type="radio" id="developer" name="messageType">
-                <label for="developer">Software developer</label><br>
-                <input type="radio" id="electrician" name="messageType">
-                <label for="electrician">Electrician</label><br>
-                <input type="radio" id="manager" name="messageType">
-                <label for="manager">Manager</label>
-            </div>
 
             <label for="number">How would you rate your skill (from 1 to 10)?</label>
             <input type="number" id="number" name="skill" min="0" max="10">
@@ -58,6 +50,7 @@
 
             <button id="submit-button" type="submit">Apply</button>
         </form>
+        <a href="https://jsonblob.com/api/jsonBlob/922641549234552832" class="atkurti-forma">Įkrauti pavyzdinę lentelę</a>
     </main>
     <footer>
         <p>Tesla 2021</p>

@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
+    <button onclick="darkMode()">Dark Mode</button>
+    <button onclick="defaultMode()">Light Mode</button>
     <title>About Tesla</title>
     <link rel="stylesheet" href="mystyles.css">
 </head>
 
-<body>
+<body id="bodyAbout">
     <header>
         <h1>About Tesla</h1>
     </header>
@@ -19,15 +21,31 @@
         <h1>Ceo</h1>
         <img src="elon.jpg" alt="Ceo picture" width="180" height="260">
         <h1>General info</h1>
-        <p>
+        <p id="editableAbout" contenteditable="false">
             Tesla, Inc. is an American electric vehicle and clean energy company based in Palo Alto, California, United
             States. Tesla designs and manufactures electric cars, battery energy storage from home to grid-scale, solar
             panels and solar roof tiles, and related products and services.
         </p>
+        <div>
+            <button onclick="editBlogEntry()">Edit</button>
+            <button onclick="saveBlogEntry()">Save</button>
+        </div>
+        <br>
+        <div>
+            <button onclick="addParagraph()">Add</button>
+            <input type="text" id="textToBeDeleted">
+            <button onclick="deleteParagraph(1)">Remove by id: </button>
+            <input type="number" id="deleteById">
+        </div>
+        <div id="container">
+
+        </div>
     </main>
     <footer>
         <p>Tesla 2021</p>
     </footer>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

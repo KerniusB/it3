@@ -144,3 +144,7 @@ table {
         text-align: left;
     }
 }
+
+.easterEgg {
+	display: none;
+}
